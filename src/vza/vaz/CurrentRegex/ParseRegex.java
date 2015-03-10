@@ -20,15 +20,16 @@ public class ParseRegex {
     public static void main(String[] args) {
         // TODO code application logic here
         String r1 ="(\\w+)@(\\w+\\.)(\\w+)(\\.\\w+)*";
-        String r2 = "ГОСТ(\\s[0-9]+(\\-[0-9]+)+)";
+        String r2 = "ГОСТ(\\s[0-9]+(\\-+[0-9]+)+)";
+        String r3 = "^\\w+\\s+\\w+\\s+";
         
 
 String s = "адреса эл.почты:mymail@tut.by и rom@bsu.by";
-String s2 = "Круг 25.0 М2 ГОСТ 23456-09 / ДКХМЛ М2 ТУ 3444-0392-222-1 ГОСТ 23456-079-9";
+String s2 = "Круг 25.0 М2 ГОСТ 23456-09 / ДКХМЛ М2 ТУ 3444-0392-222-1 ГОСТ 23456-079-98980-8768907";
 String s3 = "Круг 25.0 М2 ДСТУ 4322:2323 (ГОСТ 23456-09) / ДКХМЛ М2 ТУ 3444-0392-222-1";
 String s4 = "Круг 25.0 М2 ГОСТ 23456-09 / ДКХМЛ М2 ОСТ 3343-2828001 ТУ 3444-0392-222-1";
 
-Pattern p2 = Pattern.compile(r2);
+Pattern p2 = Pattern.compile(r3);
 
 Matcher m2 = p2.matcher(s2);
 

@@ -21,7 +21,7 @@ public class ParseRegex {
         // TODO code application logic here
         String r1 ="(\\w+)@(\\w+\\.)(\\w+)(\\.\\w+)*";
         String r2 = "ГОСТ(\\s[0-9]+(\\-+[0-9]+)+)";
-        String r3 = "^\\w+\\s+\\w+\\s+";
+        String r3 = "^[А-Яа-я]+(\\s+)|[А-Яа-я]+";
         
 
 String s = "адреса эл.почты:mymail@tut.by и rom@bsu.by";
